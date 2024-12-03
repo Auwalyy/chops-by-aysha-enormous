@@ -5,7 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0">
+    <div className=" bg-[#f4e0c9] text-black text-xl rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">Chops by Aysha</h1>
@@ -88,7 +88,7 @@ const Footer = () => {
         <p>
           <p className=" text-center py-4">
             @copyright developed by
-            <span className=" text-brightColor">enormours hub.</span> |
+            <span className=" text-black text-xl" > Enormours Hub.</span> |
             All rights reserved
           </p>
         </p>

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full">
-      <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+      <div className="flex flex-row justify-between text-[#8b4513] p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <div className="flex flex-row items-center cursor-pointer">
           <span>
             <FaCakeCandles size={32} />

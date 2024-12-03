@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        brightColor: "#F4511F",
-        backgroundColor: "#b7bca9",
-        lightText: "#959595",
+        brightColor: "#8b4513",
+        backgroundColor: "#8b4513",
+        lightText: "#8b4513",
       },
     },
   },

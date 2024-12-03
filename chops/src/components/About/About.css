@@ -1,0 +1,40 @@
+.about {
+    padding: 2rem;
+    background-color: #f4e0c9;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #8b4513;
+}
+
+.about-p{
+    font-size: 25px;
+}
+
+.about-btn button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: end;
+    text-align: end;
+}
+
+.about-btn button:hover {
+    background-color: #a45f3e;
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}

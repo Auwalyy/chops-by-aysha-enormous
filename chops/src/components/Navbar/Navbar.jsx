@@ -1,30 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+import { CartContext } from '../../pages/CartContext';
+import './Navbar.css';
 
 const Navbar = () => {
-
-    const navLinks = [
-        { name: "Home", path: '/'},
-        { name: "Service", path: '/services'},
-        { name: "About", path: '/about'},
-        { name: "Shop", path: '/shop'},
-        { name: "Contact", path: '/contact'},
-    ]
+  const { cartItems } = useContext(CartContext);
 
   return (
-    <div>
-      <div className="navbar">
-        <div className="logo"></div>
-        <div className="navlinks">
-            {navLinks.map((nav,index)=> {
-                return <div key={index} className="link">
-                    <a href={nav.path}>{nav.name}</a>
-                </div>
-            })}
-        </div>
-
+    <div className="navbar">
+      <h1 className="logo">Chops</h1>
+      <div className="navlinks">
+        <Link to="/">Shop</Link>
+      </div>
+      <div className="cart-icon">
+        <Link to="/cart">
+          <FaShoppingCart size={24} />
+          {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -24,7 +24,7 @@ const Navbar = () => {
           <span>
             <FaCakeCandles size={32} />
           </span>
-          <h1 className="text-xl font-semibold">Chops by Aysha</h1>
+          <h1 className="text-xl font-semibold">Chops by Sumyy</h1>
         </div>
 
         {/* Desktop Navbar */}
